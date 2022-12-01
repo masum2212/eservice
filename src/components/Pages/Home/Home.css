@@ -1,0 +1,116 @@
+.cardx{
+  /* height: 100px; */
+  /* width: 300px; */
+  border-radius: 10px;
+  background: #fff;
+  padding: 30px 50px;
+  position: relative;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+  cursor: pointer;
+  float: end;
+  /* overflow: hidden; */
+}
+
+.image-box{
+  position: relative;
+  width: 100%;
+  height: 195px;
+  transform: translateY(-60px);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+img{
+  width: 100%;
+  border-radius: 10px;
+}
+.content{
+  padding: 10px 20px;
+  text-align: center;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.cardx:hover{
+  height: 550px;
+  /* transition: 0.3s; */
+}
+
+.cardx:hover>.content{
+  opacity: 1;
+  transform: translateY(95px);
+}
+
+
+
+
+
+
+/* Variables */
+
+
+
+
+
+  
+  
+/* Button component */
+
+span{
+  font-size: 28px;
+}
+.billah {
+  /* margin-top: calc(50% + 25px); */
+  margin-top:30px;
+  position: relative;
+  display: inline-block;
+  width: 277px;
+  height: 50px;
+  /* font-size: 1em; */
+  /* font-weight: bold; */
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration:none;
+  font-family: 'Roboto', sans-serif;
+  font-weight:900;
+  font-size:17px;
+  letter-spacing: 0.045em;
+}
+
+.billah svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.billah svg rect {
+  /* stroke: #EC0033; */
+  stroke-width: 2;
+  stroke-dasharray: 353, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.billah span{
+background: rgb(255,130,130);
+background: -moz-linear-gradient(left,  rgba(255,130,130,1) 0%, rgba(225,120,237,1) 100%);
+background: -webkit-linear-gradient(left,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+background: linear-gradient(to right,  rgba(255,130,130,1) 0%,rgba(225,120,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.billah:hover svg rect {
+  stroke-width: 2;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 437;
+}
+  
+  
